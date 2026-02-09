@@ -7,7 +7,7 @@ Wants=graphical-session.target
 Type=simple
 Environment=DISPLAY=:0
 Environment=XAUTHORITY=%h/.Xauthority
-ExecStart=%h/.local/bin/qq-x11-guard-rs --app-name qq --threshold 10 --restart-cmd qq --cooldown 120 --fallback-poll 15 --scan-interval 2
+ExecStart=%h/.local/bin/qq-x11-guard-rs --app-name qq --threshold 20 --restart-cmd /opt/QQ/qq --cooldown 120 --fallback-poll 15 --scan-interval 2
 Restart=always
 RestartSec=3
 
